@@ -1,0 +1,12 @@
+* {
+    box-sizing: content-box;
+  }
+
+body {
+    background-color: #ffe1a8;
+}
+
+.navbar {
+    background-color: #a3ab3c;
+}
+
