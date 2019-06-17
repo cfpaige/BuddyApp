@@ -34,7 +34,7 @@ function draw() {
   for (var i = 0, x = stars.length; i < x; i++) {
     var s = stars[i];
   
-    ctx.fillStyle = "rgba(166,185,179,0.2)";
+    ctx.fillStyle = "rgba(255,255,255,0.5)";
     ctx.beginPath();
     ctx.arc(s.x, s.y, s.radius, 0, 2 * Math.PI);
     ctx.fill();
@@ -54,7 +54,7 @@ function draw() {
     }
   }
   ctx.lineWidth = 0.1;
-  ctx.strokeStyle = "rgba(180,180,180,0.2)";
+  ctx.strokeStyle = "rgba(255,255,255,0.5)";
   ctx.stroke();
 }
 

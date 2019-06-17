@@ -1,6 +1,7 @@
 html {
     height: 100%;
     box-sizing: border-box;
+    z-index: 1;
 }
   
 *,
@@ -14,13 +15,20 @@ body {
     margin: 0;
     padding: 0 0 8em 0;
     min-height: 100%;
-    background-color: #f7ece1;
+    background-color: rgba(230,230,230,0.8);
     font-family: 'Raleway', sans-serif;
 }
 
 canvas {
     position: fixed;
     top: 0;
+    z-index: -1;
+}
+
+#buddyApp-icon-logo {
+    display: inline-block;
+    float: left;
+    padding-top: 1em;
 }
 
 main {
@@ -37,13 +45,9 @@ h1 {
     padding-left: 0.5em;
 }
 
-#navbarResponsive {
-    padding-top: 1em;
-}
-
 nav.static-top {
-    height: 6em;
-    background-color: #bbdee3;
+    height: 5em;
+    background-color: #499273;
     border-bottom: 2px solid #bdc6c1;
     padding: 0;
     box-shadow: 0 1em 1em 0 rgba(0, 0, 0, 0.1);
@@ -80,10 +84,17 @@ nav.static-top {
 }
 
 #nav-search-btn {
+    background-color: #a6d2bf;
     border-radius: 0 5px 5px 0;
-    border-top: 2px solid #dde1df;
-    border-right: 2px solid #dde1df;
-    border-bottom: 2px solid #dde1df;
+    border: 2px solid #a6d2bf;
+    padding: 0 0.7em;
+}
+    
+#nav-search-btn:hover {
+    background-color: #b3d9c8;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid #a6d2bf;
+    padding: 0 0.7em;
 }
 
 a.nav-link {
@@ -92,18 +103,19 @@ a.nav-link {
     height: 3.3em;
     text-decoration: none;
     text-align: center;
-    color: #000;
+    color: #fff;
     padding: 1.7em 0 0 0;
 }
 
 li.nav-item:hover {
-    background-color: #d6ecee;
-    border-radius: 25px 25px 0 0;
+    font-weight: bolder;
+    letter-spacing: 0.05em;
+    background-color: rgba(166,210,191,0.3)
 }
 
 li.active {
-    background-color: #d6ecee;
-    border-radius: 25px 25px 0 0;
+    font-weight: bolder;
+    letter-spacing: 0.05em;
 }
 
 .card {
@@ -129,19 +141,25 @@ li.active {
     width: 100%
 }
 
+#buddyApp-logo {
+    display: inline-block;
+    padding-left: 0.5em;
+    align-self: baseline;
+}
+
 footer {
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 1.5em;
-    background-color: #bbdee3;
+    background-color: #499273;
     color: #000;
     text-align: center;
     border-top: 2px solid #bdc6c1;
 }
 
-
+/* ============== MEDIA ================= */
 
   @media (min-width: 992px) {
     .container {
@@ -155,3 +173,45 @@ footer {
     }
 
 }
+
+/* ============= styling for ABOUT page: ============= */
+
+/* Style the container with a rounded border, grey background and some padding and margin */
+.blurb {
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+  }
+  
+  /* Clear floats after containers */
+  .blurb::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+  .blurb img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Increase the font-size of a span element */
+  .blurb span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+  @media (max-width: 500px) {
+    .blurb {
+      text-align: center;
+    }
+  
+    .blurb img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
