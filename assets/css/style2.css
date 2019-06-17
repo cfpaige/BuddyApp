@@ -1,11 +1,8 @@
 
- <img src ="/assets/css/img/simon copy.jpg">
- <img src ="ava copy.jpg">
-
 
 
 /* Style the container with a rounded border, grey background and some padding and margin */
-.container {
+.blurb {
  
   
   border-radius: 5px;
@@ -14,32 +11,32 @@
 }
 
 /* Clear floats after containers */
-.container::after {
+.blurb::after {
   content: "";
   clear: both;
   display: table;
 }
 
 /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
-.container img {
+.blurb img {
   float: left;
   margin-right: 20px;
   border-radius: 50%;
 }
 
 /* Increase the font-size of a span element */
-.container span {
+.blurb span {
   font-size: 20px;
   margin-right: 15px;
 }
 
 /* Add media queries for responsiveness. This will center both the text and the image inside the container */
 @media (max-width: 500px) {
-  .container {
+  .blurb {
     text-align: center;
   }
 
-  .container img {
+  .blurb img {
     margin: auto;
     float: none;
     display: block;
