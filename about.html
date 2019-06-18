@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BuddyApp</title>
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+
+  <canvas id="canvas"></canvas>
+  
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar navbar-expand-lg static-top">
+    <div id="navbar-wrap">
+      <img src="assets/img/buddyApp-icon-gr-lg.png" height="50" id="buddyApp-icon-logo">
+      <nav class="navbar navbar-light">
+        <form class="form-inline nav-search" name="site-search" role="search">
+          <div class="input-group">
+            <!-- <div class="input-group-prepend nav-left">
+              <span class="input-group-text" id="basic-addon1">>></span>
+              <div id="nav-search-drop-card"></div>
+            </div> -->
+            <input type="text" class="form-control" id="nav-search-field" type="search" placeholder="Search"
+              aria-label="Search">
+            <div class="input-group-append nav-right">
+              <button class="btn-light" id="nav-search-btn" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+      </nav>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://cfpaige.github.io/BuddyApp/events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://cfpaige.github.io/BuddyApp/create">Create</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://cfpaige.github.io/BuddyApp/about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <h1>Let's Go Places</h1>
+      <h1>About Us</h1>
+      <p> Buddy App provides a unique opportunity for people to get together and experience what life has to offer.
+        Doesn't
+        matter where you come from and it doesn't matter what you do, Buddy up and go see the world.</p>
+      <div class="blurb">
+        <img src="assets/img/Chrissie.jpg" alt="Chrissie" style="width:90px">
+        <p><span>Chrissie Wade.</span> Love To Hike.</p>
+        <p>If it wasn't for Buddy App, I wouldn't have found my Mt. St. Helen's hiking group. We climb volcano's on
+          weekends!</p>
+      </div>
+      <div class="blurb">
+        <img src="assets/img/show.jpg" alt="show" style="width:90px">
+        <p><span>Ce Liester.</span> Car Enthusiast.</p>
+        <p>Not everyone is a car club guy. Just moved to Seattle, WA and I joined my first car show event and met lifelong
+          friends.</p>
+      </div>
+      <div class="blurb">
+        <img src="assets/img/Simon.jpg" alt="Simon" style="width:90px">
+        <p><span>Simon Lee.</span> What Seattle Freeze?.</p>
+        <p>I'm a video gammer and don't get out much. Thanks to Buddy App, I have been able to get out of my comfort zone
+          and go to amazing activities with new found friends.</p>
+      </div>
+      <div class="blurb">
+        <img src="assets/img/ava.jpg" alt="ava" style="width:90px">
+        <p><span>Amerie Etchieson.</span> New Mom New City.</p>
+        <p>I am the first of my friends to have a baby and didn't know any parents to have playdates with..untll Buddy
+          App!</p>
+      </div>
+      <h1>Contact Us</h1>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll Never Share Your Email With Anyone Else.</small>
+        </div>
+        <button type="submit" class="btn-light" id="contact-submit-btn">Submit</button>
+      </form>
+
+  </section>
+ 
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+      Choose Kind
+      <img src="assets/img/buddyApp-logo-green.PNG" height="60px" id="footer-logo">
+    </footer>
+  
+    <!-- ==================== SCRIPTS ==================== -->
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  
+    <script src="assets/js/cp-dot-logic.js"></script>
+  
+  </body>
+  
+  </html>
