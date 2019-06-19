@@ -11,11 +11,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Raleway&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.css" />
   <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 
-<body>
+<body> 
 
   <canvas id="canvas"></canvas>
 
@@ -61,8 +62,8 @@
   
   <!-- ==================== MAIN ==================== -->
   <main>
-    <section id="this-event">
-      <h1>This Event</h1>
+    <section id="add-event">
+      <h1>User Events</h1>
       <div class="display-wrapper">
         <div class="card-deck">
           <div class="card">
@@ -98,6 +99,11 @@
         </div>
       </div>
     </section>
+    <section>
+        <div id="status"></div>
+        <a href="javascript:void(0);" onclick="fbLogin()" id="fbLink"><img src="fblogin.png"/></a>
+        <div id="userData"></div>
+    </section>
   </main>
 
   <!-- ==================== FOOTER ==================== -->
@@ -107,6 +113,10 @@
   </footer>
 
   <!-- ==================== SCRIPTS ==================== -->
+
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
