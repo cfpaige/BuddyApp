@@ -15,40 +15,55 @@ var database = firebase.database();
 
 // ============== FB LOGIN SETUP ================
 
-window.fbAsyncInit = function () {
-  FB.init({
-    appId: '314010786217012',
-    cookie: true,
-    xfbml: true,
-    version: 'v3.3'
-  });
+var provider = new firebase.auth.FacebookAuthProvider();
+
+provider.addScope('id,first_name,last_name,email,picture');
+
+firebase.auth().signInWithPopup(provider).then(function(result) {
+  var token = result.credential.accessToken;
+  var user = result.user;
+}).catch(function(error) {
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  var email = error.email;
+  var credential = error.credential;
+});
+
+
+// window.fbAsyncInit = function () {
+//   FB.init({
+//     appId: '314010786217012',
+//     cookie: true,
+//     xfbml: true,
+//     version: 'v3.3'
+//   });
 
   // FB.AppEvents.logPageView();
 
-  FB.getLoginStatus(function(response) {
-    if (response.status === 'connected') {
-         getFbUserData();
-    }
-});
-};
+//   FB.getLoginStatus(function(response) {
+//     if (response.status === 'connected') {
+//          getFbUserData();
+//     }
+// });
+// };
 
-(function (d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) { return; }
-  js = d.createElement(s); js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk.js";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+// (function (d, s, id) {
+//   var js, fjs = d.getElementsByTagName(s)[0];
+//   if (d.getElementById(id)) { return; }
+//   js = d.createElement(s); js.id = id;
+//   js.src = "https://connect.facebook.net/en_US/sdk.js";
+//   fjs.parentNode.insertBefore(js, fjs);
+// }(document, 'script', 'facebook-jssdk'));
 
-function fbLogin() {
-  FB.login(function (response) {
-      if (response.authResponse) {
-          getFbUserData();
-      } else {
-          document.getElementById('status').innerHTML = 'User cancelled login or did not fully authorize.';
-      }
-  }, {scope: 'email'});
-};
+// function fbLogin() {
+//   FB.login(function (response) {
+//       if (response.authResponse) {
+//           getFbUserData();
+//       } else {
+//           document.getElementById('status').innerHTML = 'User cancelled login or did not fully authorize.';
+//       }
+//   }, {scope: 'email'});
+// };
 
 function getFbUserData(){
   FB.api('/me', {locale: 'en_US', fields: 'id,first_name,last_name,email,picture'},
@@ -84,14 +99,14 @@ $("#event-button").on("click", function (event) {
   // $("#train-freq").val("");
 });
 
-function fbLogout() {
-  FB.logout(function() {
-      document.getElementById('fbLink').setAttribute("onclick","fbLogin()");
-      document.getElementById('fbLink').innerHTML = '<img src="fblogin.png"/>';
-      document.getElementById('userData').innerHTML = '';
-      document.getElementById('status').innerHTML = 'You have successfully logout from Facebook.';
-  });
-};
+// function fbLogout() {
+//   FB.logout(function() {
+//       document.getElementById('fbLink').setAttribute("onclick","fbLogin()");
+//       document.getElementById('fbLink').innerHTML = '<img src="fblogin.png"/>';
+//       document.getElementById('userData').innerHTML = '';
+//       document.getElementById('status').innerHTML = 'You have successfully logout from Facebook.';
+//   });
+// };
 
 
 // =================  BACKGROUND CANVAS LOGIC ================
