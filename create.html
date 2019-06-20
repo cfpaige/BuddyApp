@@ -42,18 +42,18 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://cfpaige.github.io/BuddyApp/">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://cfpaige.github.io/BuddyApp/events.html">Events</a>
+                    <a class="nav-link" href="events.html">Events</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Create
+                    <a class="nav-link" href="create.html">Create
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://cfpaige.github.io/BuddyApp/about.html">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
             </ul>
         </div>
@@ -65,36 +65,10 @@
 
     <section id="add-event">
       <h1>Add Your Event</h1>
-      <div class="display-wrapper">
-        <div class="card-deck">
-          <div class="card">
-            <div class="img-wrapper">
-              <img src="https://via.placeholder.com/500.jpg" id="add-img">
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <p class="card-text" id="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a
-                libero vel
-                sapien
-                rutrum volutpat id
-                nec
-                libero. Suspendisse elit purus, ultrices et volutpat nec, lobortis vel nisl. Vestibulum lectus nulla,
-                dignissim
-                imperdiet pretium in, ornare ac ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-                per
-                inceptos himenaeos. Quisque pharetra odio metus, sit amet efficitur nibh feugiat eu. Pellentesque tempor
-                sem
-                eu
-                odio malesuada, nec posuere nisl convallis. Suspendisse et ornare elit, vel suscipit felis. Nunc sed
-                ornare
-                metus.
-                Quisque vehicula, lectus et vestibulum venenatis, libero nisl aliquet orci, at rutrum urna ligula at
-                mauris.
-                Aliquam sed nibh eget dolor faucibus tempus.</p>
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%230B8043&amp;ctz=America%2FLos_Angeles&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23F6BF26&amp;title=BuddyApp%20Events&amp;showCalendars=1" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
             <div class="card-footer text-right">
-              <a class="btn btn-light" href="#" role="button" id="event-button">Create Event</a>
+              <a class="btn btn-light" href="createCal.html" role="button" id="event-button">Create Event</a>
             </div>
           </div>
         </div>
@@ -113,9 +87,7 @@
   <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
@@ -124,7 +96,6 @@
     crossorigin="anonymous"></script>
 
   <script src="assets/js/cp-dot-logic.js"></script>
-  <script src="assets/js/main.js"></script>
 
 </body>
 
