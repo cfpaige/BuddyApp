@@ -10,10 +10,10 @@ $(document).ready(function() {
     //getting user location
     function getLocation() {
       $.ajax({
-        url: "http://ip-api.com/json",
+        url: "https://geo.ipify.org/api/v1?apiKey=at_nIysGBt1YoAQEkpysif4KBcrvsOhe",
         method: "GET"
       }).then(function(location) {
-        town = location.city;
+        town = location.location.city;
         makeEventCards();
       });
     }
