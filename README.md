@@ -1,6 +1,8 @@
-# Walkthrough Buddy
+# BuddyApp
 
-A web app for social activation, making it easy for people who want to get involved in new activities to connect with others already comfortable in those situations and settings.
+A web app for social activation, making it easy for people who want to get involved in new activities to connect with others with similar interests.
+
+![BuddyApp front page screencap](/buddyApp-screencap.png)
 
 ## Motivation
 
