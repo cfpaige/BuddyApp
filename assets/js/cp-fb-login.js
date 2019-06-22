@@ -1,11 +1,13 @@
+// replace with your database snippet:
+
 var firebaseConfig = {
-    apiKey: "AIzaSyCh0TYKcno4iYybRDrOBo5mlzrmtozRvu0",
-    authDomain: "walkthroughbuddy-8e118.firebaseapp.com",
-    databaseURL: "https://walkthroughbuddy-8e118.firebaseio.com",
-    projectId: "walkthroughbuddy-8e118",
-    storageBucket: "walkthroughbuddy-8e118.appspot.com",
-    messagingSenderId: "244965132079",
-    appId: "1:244965132079:web:87616e28adf0abf3"
+    apiKey: "xxxxxxxxxxxxx",
+    authDomain: "xxxxxxxxxxxxx",
+    databaseURL: "xxxxxxxxxxxxx",
+    projectId: "xxxxxxxxxxxxx",
+    storageBucket: "xxxxxxxxxxxxx.appspot.com",
+    messagingSenderId: "xxxxxxxxxxxxx",
+    appId: "xxxxxxxxxxxxx"
   };
 
   firebase.initializeApp(firebaseConfig);
