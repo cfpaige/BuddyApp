@@ -1,5 +1,10 @@
 language: node_js
 node_js:
         - "stable"
-# script: gulp travis
-
+git:
+  depth: false
+# safelist
+branches:
+  only:
+  - master
+  - stable
