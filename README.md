@@ -29,7 +29,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 The app has been tested on and is compatible with IE 11, Edge 18, Firefox 66, Safari =< 11 12, Opera 60, Chrome 74, iOS =< 10 11 12, and Android =< 3 4*.
 
-/* Most Android devices from 4.4 onwards use Chrome as the default browser, older versions use the original Android stock browser.
+\* Most Android devices from 4.4 onwards use Chrome as the default browser, older versions use the original Android stock browser.
 
 Standard system requirements for installation:
 
