@@ -9,7 +9,7 @@ A web app for social activation, making it easy for people who want to get invol
 
 ## Motivation
 
-Inspired by ![NAS buddy-mentor program](https://www.autism.org.uk/services/community/befriending-mentoring.aspx), but aimed at 18+.
+Inspired by [NAS buddy-mentor program](https://www.autism.org.uk/services/community/befriending-mentoring.aspx), but aimed at 18+.
 
 ## Overview
 
@@ -29,7 +29,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 The app has been tested on and is compatible with IE 11, Edge 18, Firefox 66, Safari =< 11 12, Opera 60, Chrome 74, iOS =< 10 11 12, and Android =< 3 4*.
 
-* Most Android devices from 4.4 onwards use Chrome as the default browser, older versions use the original Android stock browser.
+/* Most Android devices from 4.4 onwards use Chrome as the default browser, older versions use the original Android stock browser.
 
 Standard system requirements for installation:
 
@@ -65,7 +65,7 @@ The app in its current form does not have full functionality. (Most notably, it 
 
 #### Built With [![Build Status](https://travis-ci.com/cfpaige/BuddyApp.svg?branch=master)](https://travis-ci.com/cfpaige/BuddyApp)
 
-![Virtual Studio Code](https://code.visualstudio.com/)
+[Virtual Studio Code](https://code.visualstudio.com/)
 
 **APIs used:** 
 - Eventbrite
