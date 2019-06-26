@@ -1,4 +1,4 @@
-> This project is ARCHIVED. You can still fork it, but to submit issues or propose changes, go to https://github.com/cfpaige/WalkthroughApp/issues instead.
+> This project is ARCHIVED. You can still fork it, but to submit issues or propose changes, go to https://github.com/cfpaige/walkthrough-app/issues instead.
 
 # BuddyApp
 
